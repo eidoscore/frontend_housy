@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  frontend:
+      container_name: frontend
+      image: eidoscore/frontend:latest
+      stdin_open: true
+      ports:
+          - 3000:3000
