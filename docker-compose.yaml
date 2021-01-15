@@ -1,8 +1,15 @@
-version: '3.7'
+version: '3.3'
 services:
   frontend:
-      container_name: frontend
-      image: eidoscore/frontend:latest
-      stdin_open: true
-      ports:
-          - 3000:3000
+    image: eidoscore/frontend-final
+    restart: always
+    stdin_open: true
+    ports:
+      - 3000:3000
+  
+  frontend-2:
+    image: eidoscore/frontend-final
+    restart: always
+    stdin_open: true
+    ports:
+      - 3001:3000
